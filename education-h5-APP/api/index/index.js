@@ -41,9 +41,17 @@ const getmian = async()=>{
 	return data
 }
 
+// 详情接口
+const getxiang = async()=>{
+	let data=await api({
+		url:'/course/course/is-buy/null',
+		method:'post'
+	})
+	return data
+}
 
 export{
-	getTitle,getRe,getlun,getxin,getmian
+	getTitle,getRe,getlun,getxin,getmian,getxiang
 }
 
 

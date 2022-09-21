@@ -9,7 +9,7 @@
 				</span>
 				<span>全部></span>
 			</p>
-			<view class="hot1" v-for="item in hotData" :key="item.id">
+			<view class="hot1" v-for="item in hotData" :key="item.id" @click="add(item.id)">
 				<view class="hot2">
 					<image :src="item.mainImage" mode=""></image>
 					<p>{{ item.totalTime }}</p>
@@ -29,8 +29,17 @@
 
 <script>
 export default {
+	
 	props: ['hotData','fout','free'],
-	name: 'recommend'
+	name: 'recommend',
+	setup(proxy,xst) {
+		let add=(id)=>{
+			xst.emit('add',id)
+		}
+		return {
+			add
+		}
+	}
 };
 </script>
 

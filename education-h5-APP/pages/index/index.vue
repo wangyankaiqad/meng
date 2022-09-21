@@ -11,7 +11,7 @@
 			<li v-for="item in navData" :key="item.id">{{ item.name }}</li>
 		</view>
 		<!-- 热门推荐 -->
-		<recommend :hotData="hotData" :fout='fout1' :free='free1'></recommend>
+		<recommend :hotData="hotData" :fout='fout1' :free='free1' @add='add'></recommend>
 		<!-- 近期上新 -->
 		<view class="hot">
 			<p>
@@ -40,12 +40,33 @@
 		</view>
 		<recommend :hotData="mianData" :fout='fout' :free='free'></recommend>
 	</view>
+	<view class="foote">
+		-----我是有底线的-----
+	</view>
 </template>
 
 <script>
 import { getTitle, getRe, getxin,getmian } from '../../api/index/index.js';
 import { ref, reactive, toRefs } from 'vue';
 export default {
+	// 加载数据
+	onReachBottom() {
+		console.log(123123);
+		if(this.mianData.length==100){
+			uni.showToast({
+				title:'没有更多数据了'
+			})
+			
+		}else{
+			let page1=this.page++
+			getmian(page1).then(res=>{
+				console.log(res,'resres');
+				this.mianData=[...this.mianData,...res.data.records]	
+			})
+		}
+		
+		
+	},
 	setup() {
 		const data = reactive({
 			// 导航区的数据
@@ -57,9 +78,13 @@ export default {
 			// 免费精选
 			mianData:[],
 			fout:'免费精选',
-			fout1:'最近上新',
+			fout1:'热门推荐',
 			free:'FREE',
-			free1:'HOT'
+			free1:'HOT',
+			// 页数
+			page:1,
+		
+		
 			
 		});
 		// 导航区
@@ -81,9 +106,20 @@ export default {
 			data.mianData = res.data.records;
 			console.log(res.data.records, 123123);
 		});
+		// 点击去往详情页
+	    const add=(id)=>{
+			console.log(id);
+			uni.navigateTo({
+				url:'/pages/detalis/detalis'
+			})
+			
+		} 
+		
+	
 
 		return {
-			...toRefs(data)
+			...toRefs(data),
+			add
 		};
 	}
 };
@@ -202,5 +238,8 @@ li {
 		margin: 0;
 	}
 	
+}
+.foote{
+	text-align: center;
 }
 </style>

@@ -1,21 +1,13 @@
 <template>
 	<navigator url="/pages/searchyemian/searcgyemian">
-		<view><input type="text" placeholder="请输入搜索到额内容" class="input" disabled @click="add" /></view>
+		<view><input type="text" placeholder="请输入搜索到额内容" class="input" disabled  /></view>
 	</navigator>
 </template>
 
 <script>
 export default {
 	name: 'search',
-	setup() {
-		const add=()=>{
-			console.log(123);
-			
-		}
-		return{
-			add
-		}
-	}
+
 
 };
 </script>

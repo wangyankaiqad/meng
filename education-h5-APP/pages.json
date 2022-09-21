@@ -1,19 +1,30 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	// 	首页
+
 		{
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "app",
 				// 取消顶部
-				"navigationStyle": "custom"
+				"navigationStyle": "custom",
+				// 设置参数为true
+				"enablePullDownRefresh": true,
+				// 距离底部30px触发
+				"onReachBottomDistance": 30
 			}
 		},
 		{
 			"path": "pages/article/article",
 			"style": {}
-		}, {
+		},
+		// 分类
+		{
 			"path": "pages/category/category",
-			"style": {}
+			"style": {
+				// 取消顶部
+				"navigationStyle": "custom"
+			}
 		}, {
 			"path": "pages/my/my",
 			"style": {}
@@ -24,6 +35,13 @@
 		// 搜索页面
 		{
 			"path": "pages/searchyemian/searcgyemian",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		// 详情页面
+		{
+			"path":"pages/detalis/detalis",
 			"style": {
 				"navigationStyle": "custom"
 			}
