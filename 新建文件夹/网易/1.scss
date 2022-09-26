@@ -1,0 +1,19 @@
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: #ef1b1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+     padding: 0 10px;
+    a {
+        color: #fff;
+        img{
+            height: 30px;
+        }
+        .icon-yonghu,.icon-youxiang{
+            font-size: 20px;
+        }
+    }
+}
