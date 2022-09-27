@@ -1,0 +1,169 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	// 	首页
+
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "app",
+				// 取消顶部
+				"navigationStyle": "custom",
+				// 设置参数为true
+				"enablePullDownRefresh": true,
+				// 距离底部30px触发
+				"onReachBottomDistance": 30
+			}
+		},
+		// 阅读
+		{
+			"path": "pages/article/article",
+			"style": {
+				// 取消顶部
+				"navigationStyle": "custom",
+				// 设置参数为true
+				"enablePullDownRefresh": true,
+				// 距离底部30px触发
+				"onReachBottomDistance": 30
+			}
+		},
+		// 分类
+		{
+			"path": "pages/category/category",
+			"style": {
+				// 取消顶部
+				"navigationStyle": "custom"
+				
+			}
+		}, 
+		// 我的
+		{
+			"path": "pages/my/my",
+			"style": {
+				// 取消顶部
+				"navigationStyle": "custom"
+			}
+		},
+		// 问答
+		{
+			"path": "pages/question/question",
+			"style": {
+				// 取消顶部
+				"navigationStyle": "custom",
+				// 设置参数为true
+				"enablePullDownRefresh": true,
+				// 距离底部30px触发
+				"onReachBottomDistance": 30
+			}
+		},
+		// 搜索页面
+		{
+			"path": "pages/searchyemian/searcgyemian",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		// 详情页面
+		{
+			"path":"pages/detalis/detalis",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		// 登录页面
+		{
+			"path": "pages/dengl/dengl",
+			"style": {
+				// 取消顶部
+				"navigationStyle": "custom"
+			}
+		},
+		// 个人资料
+		{
+			"path": "pages/ziliao/ziliao",
+			"style": {
+				// 取消顶部
+				"navigationStyle": "custom"
+			}
+		},
+		// 设置页面
+		{
+			"path": "pages/setting/setting",
+			"style": {
+				// 取消顶部
+				"navigationStyle": "custom"
+			}
+		}
+	   // 观看视频
+        ,{
+            "path" : "pages/shipin/shipin",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		// 登录页面的意见
+		{
+            "path" : "pages/yijian/yijian",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "意见反馈",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		// 我的学习
+        ,{
+            "path" : "pages/xuexi/xuexi",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的学习",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "梦学谷",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "black",
+		"selectedColor": "red",
+		"height": "50px",
+		"list": [{
+				"text": "首页",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tab/index.png",
+				"selectedIconPath": "static/tab/index-active.png"
+			},
+			{
+				"text": "分类",
+				"pagePath": "pages/category/category",
+				"iconPath": "static/tab/category.png",
+				"selectedIconPath": "static/tab/category-active.png"
+			},
+			{
+				"text": "阅读",
+				"pagePath": "pages/article/article",
+				"iconPath": "static/tab/article.png",
+				"selectedIconPath": "static/tab/article-active.png"
+			},
+			{
+				"text": "问答",
+				"pagePath": "pages/question/question",
+				"iconPath": "static/tab/question.png",
+				"selectedIconPath": "static/tab/question-active.png"
+			},
+			{
+				"text": "我的",
+				"pagePath": "pages/my/my",
+				"iconPath": "static/tab/my.png",
+				"selectedIconPath": "static/tab/my-active.png"
+			}
+		]
+	}
+}
