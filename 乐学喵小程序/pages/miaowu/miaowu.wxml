@@ -1,0 +1,21 @@
+<view class="headet">
+    <image class="image1" src="../../image/100.png"></image>
+    <view class="top">
+        <view class="headet3">
+            <image class="image2" src="../../image/16.png"></image>
+        </view>
+
+        <view class="headet2">
+            <image class="image3" src="../../image/download (16).png"></image>
+            <image class="image4" src="../../image/download (26).png"></image>
+        </view>
+    </view>
+    <view class="aa">
+        <view class="header">
+            <view class="harder1" bindtap="add(1)">广场</view>
+            <view class="harder1" bindtap="add(1)">图书勘误</view>
+            <view class="harder1" bindtap="add(1)">关注</view>
+        </view>
+    </view>
+
+</view>
