@@ -17,5 +17,58 @@
             <view class="harder1" bindtap="add(1)">关注</view>
         </view>
     </view>
+</view>
+<view class="guang">
+    <view class="page-section-spacing">
+        <scroll-view class="scroll-view_H" scroll-x="true" style="30">
+            <view id="demo1" class="scroll-view-item_H demo-text-1" wx:for="{{huaData}}" wx:key="index">
+                <image class="image5" src="{{item.cover}}"></image>
+                <view class="demol2">#{{item.title}}#</view>
+                <view class="demol1">{{item.dyna_count}}讨论</view>
+            </view>
+        </scroll-view>
+    </view>
+
+
+    <view class="miao">
+        <view class="miaomiao">
+            <view class="miaoleft">
+                <view class="miaoimg">
+                    <image src="../../image/8.png"></image>
+                </view>
+                <view class="miaotext">
+                    <view class="a1">英语喵</view>
+                    <view class="a2">08-27</view>
+                </view>
+            </view>
+            <view class="miaoright">
+                <view class="a1">+关注</view>
+                <view class="a2">···</view>
+            </view>
+        </view>
+        <view class="miaozhong">
+            <text>爱阔爱是的苦难安居贫困那女的口爱喝酒大V哪怕靠谱的剧熬到就怕困难大V哦条数安排可能大V佛天AK平年Sofia</text>
+        </view>
+        <view class="miaoxia">
+            <image src="../../image/download (16).png"></image>
+        </view>
+
+        <view class="miaofooter">
+            <view class="miao1">
+                <image src="../../image/download (32).png"></image>
+            </view>
+            <view class="miao1">
+                <image src="../../image/download (30).png"></image>
+                <text>10</text>
+            </view>
+            <view class="miao1">
+                <image src="../../image/download (31).png"></image>
+                <text>36</text>
+            </view>
+          
+        </view>
+    </view>
+
+
 
 </view>

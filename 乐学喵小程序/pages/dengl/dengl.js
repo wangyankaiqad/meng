@@ -5,6 +5,7 @@ Page({
      * 页面的初始数据
      */
     data: {
+        // 图片地址
         yanList: '',
         key: '',
         shuzi: 0
@@ -19,6 +20,7 @@ Page({
                 var add = res.data.data.url.img
                 var key = res.data.data.url.key
                 this.setData({
+                    // 获取图片
                     yanList: add,
                     key: key
                 })

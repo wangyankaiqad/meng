@@ -6,6 +6,9 @@ Page({
      */
     data: {
         active: 1,
+        // 滑动块的数据
+        huaData:[],
+        miaoList:[]
     },
     onChange(event) {
         // wx.showToast({
@@ -13,13 +16,43 @@ Page({
         //   icon: 'none',
         // });
         console.log(event);
-      },
-      
+    },
+
+    xr() {
+        // https://www.lexuemiao.com/api/app/square/themeList
+        wx.request({
+            url: 'https://www.lexuemiao.com/api/app/square/themeList',
+            method: 'GET',
+            success: (res) => {
+                console.log(res.data.data);
+                this.setData({
+                    miaoList: res.data.data
+                })
+            }
+
+        })
+        wx.request({
+            url: 'https://www.lexuemiao.com/api/app/square/squareList?page=1&limit=15',
+            method: 'GET',
+            success: (res) => {
+                console.log(res.data.data);
+                this.setData({
+                    huaData: res.data.data
+                })
+            }
+
+        })
+    },
+
+
+
+
+
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-
+        this.xr()
     },
 
     /**

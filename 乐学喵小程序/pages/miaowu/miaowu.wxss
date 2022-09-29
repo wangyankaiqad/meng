@@ -1,52 +1,178 @@
 /* pages/miaowu/miaowu.wxss */
 
-.headet{
+.headet {
     width: 100%;
-    height: 150px;
+    height: 300rpx;
     position: relative;
-    border-bottom: 10px solid #efefef;
+    border-bottom: 20rpx solid #efefef;
 }
-.headet .image1{
+
+.headet .image1 {
     width: 100%;
     height: 100%;
 }
-.top{
+
+.top {
     display: flex;
     position: absolute;
-    top: 30px;
+    top: 60rpx;
     width: 100%;
-    
+
 }
-.image2{
-    height: 40px;
-    width: 130px;
+
+.image2 {
+    height: 80rpx;
+    width: 260rpx;
+    margin-left: 30rpx;
 }
-.image3{
-    height: 30px;
-    width: 30px;
+
+.image3 {
+    height: 60rpx;
+    width: 60rpx;
 }
-.image4{
-    height: 30px;
-    width: 20px;
+
+.image4 {
+    height: 60rpx;
+    width: 40rpx;
     float: right;
 }
-.headet2{
-    width: 70px;
-    margin-right: 30px;
+
+.headet2 {
+    width: 140rpx;
+    margin-right: 60rpx;
 }
-.headet3{
+
+.headet3 {
     flex: 1;
 }
-.aa{
-    margin-top: -50px;
+
+.aa {
+    margin-top: -100rpx;
 }
-.header{
+
+.header {
     display: flex;
     justify-content: space-around;
 }
-.harder1{
-    width: 80px;
-    height: 30px;
+
+.harder1 {
+    width: 160rpx;
+    height: 60rpx;
     text-align: center;
     line-height: 30px;
+}
+
+.page-section-spacing {
+    margin-top: 60rpx;
+}
+
+.scroll-view_H {
+    white-space: nowrap;
+}
+
+.scroll-view-item_H {
+    display: inline-block;
+    width: 25%;
+    height: 300rpx;
+    text-align: center;
+}
+
+.image5 {
+    height: 200rpx;
+    width: 100%;
+    border-radius: 20rpx;
+}
+
+.demo-text-1 {
+    margin-left: 40rpx;
+}
+
+.demol1 {
+    font-size: 24rpx;
+    color: gray;
+}
+
+.demol2 {
+    color: #eb4450;
+}
+.miao{
+    margin-top: 60rpx;
+    padding: 0 40rpx;
+    border-bottom: 20rpx solid #efefef;
+}
+
+.miaoimg {
+    width: 80rpx;
+    height: 80rpx;
+    margin-right: 20rpx;
+}
+
+.miaoimg image {
+    width: 100%;
+    height: 100%;
+
+}
+
+.miaomiao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.miaoleft {
+    display: flex;
+}
+
+.miaotext .a1 {}
+
+.miaotext .a2 {
+    font-size: 12px;
+    color: gray;
+}
+.miaoright{
+    display: flex;
+
+}
+.miaoright .a1{
+    width: 110rpx;
+    height: 60rpx;
+    background-color: #f7cfd2;
+    line-height: 60rpx;
+    text-align: center;
+    color: #ef4450;
+    font-size: 24rpx;
+    border-radius: 30rpx;
+}
+.miaoright .a2{
+    font-size: 40rpx;
+    margin-left: 30rpx;
+}
+.miaozhong{
+    margin-top: 20rpx;
+}
+.miaoxia{
+    width: 400rpx;
+    height: 400rpx;
+    background-color:red;
+    margin-top: 30rpx;
+}
+.miaoxia image{
+    width: 100%;
+    height: 100%;
+}
+.miaofooter{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40rpx;
+}
+.miao1{
+    margin-top: 80rpx;
+    height: 100rpx;
+}
+.miao1 image{
+    width: 40rpx;
+    height: 40rpx;
+}
+.miao1 text{
+    color: gray;
+    margin: 10rpx;
 }

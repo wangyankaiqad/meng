@@ -52,4 +52,3 @@
     <view class="a1">问题反馈</view>
     <view class="a2">></view>
 </view>
-<van-button type="primary">按钮</van-button>
