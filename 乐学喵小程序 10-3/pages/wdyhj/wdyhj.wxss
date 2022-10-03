@@ -1,0 +1,17 @@
+/* pages/wdyhj/wdyhj.wxss */
+.hearder{
+    display: flex;
+    height: 100rpx;
+    justify-content: space-evenly;
+}
+.chid{
+    flex: 1;
+    text-align: center;
+    height: 100rpx;
+    line-height: 100rpx;
+
+}
+.active{
+    border-bottom: 1px solid #eb4450;
+    color: #eb4450;
+}

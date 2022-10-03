@@ -1,0 +1,7 @@
+<!--pages/dzgl/dzgl.wxml-->
+<view class="header">
+    <view class="img">
+        <image src="../../image/21.png"></image>
+    </view>
+    <view>暂无地址</view>
+</view>

@@ -1,0 +1,235 @@
+.header {
+    display: flex;
+    /* padding: 0 40rpx; */
+    justify-content: space-between;
+    height: 80rpx;
+    align-items: center;
+}
+
+.header .right image {
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 40rpx;
+}
+
+.header .left {
+    font-weight: 900;
+}
+
+.daohang {
+    display: flex;
+    justify-content: space-around;
+}
+
+.daohang .doa1 {
+    padding: 10rpx;
+
+}
+
+.active {
+    border-bottom: 4rpx solid #eb4450;
+    color: #eb4450;
+}
+
+.color {
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+.swiper-class {
+    padding: 0 30rpx;
+    margin-top: 30rpx;
+}
+
+
+swiper-item image {
+    border-radius: 40rpx;
+    height: 100%;
+    width: 100%;
+}
+
+.top {
+    text-align: center;
+    margin-top: 40rpx;
+}
+
+.top view {
+    color: gray;
+}
+
+.top image {
+    width: 100rpx;
+    height: 50rpx;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30rpx;
+    align-items: center;
+}
+
+.middle .left {
+    font-weight: 800;
+    font-size: 40rpx;
+}
+
+.middle .right {
+    font-size: 24rpx;
+}
+
+.a {
+    width: 30%;
+    text-align: center;
+    background-color: rgb(128, 128, 128, .3);
+    position: relative;
+    margin-top: 80rpx;
+}
+
+.a .a1 {
+    width: 100rpx;
+    height: 100rpx;
+    position: absolute;
+    top: -50rpx;
+    left: 55rpx;
+}
+
+.a .a1 image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.footer {
+    display: flex;
+    padding: 0 20rpx;
+    justify-content: space-around;
+}
+
+.a .a2 {
+    height: 150rpx;
+    /* background-color: red; */
+    font-size: 24rpx;
+    overflow: hidden;
+    margin-top: 60rpx;
+
+}
+
+.a .a3 {
+    width: 60%;
+    height: 60rpx;
+    background-color: #eb4450;
+    text-align: center;
+    line-height: 60rpx;
+    margin: auto;
+    border-radius: 30rpx;
+    color: #fff;
+    font-size: 28rpx;
+}
+
+.a .a4 {
+    font-size: 24rpx;
+    margin-top: 10rpx;
+    color: #eb4450;
+    margin-bottom: 20rpx;
+}
+
+.b {
+    margin: 20px;
+    border: 1px solid rgb(128, 128, 128, 0.2);
+    border-radius: 40rpx;
+}
+
+.b2,
+.b3,
+.b4 {
+    padding: 0 10rpx;
+}
+
+.b1 {
+    background-color: #eb4450;
+    width: 140rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    height: 40rpx;
+    line-height: 40rpx;
+    border-top-left-radius: 20rpx;
+    border-bottom-right-radius: 20rpx;
+}
+
+.b .b3 {
+    display: flex;
+    margin-top: 20rpx;
+}
+
+.b3 .b33 {
+
+    display: flex;
+    align-items: center;
+    margin-right: 30rpx;
+
+}
+
+.b33 text {
+    font-size: 24rpx;
+    margin-left: 10rpx;
+}
+
+.b33 image {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 30rpx;
+}
+
+.b4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20rpx 0;
+}
+
+.b4 .b44 {
+    font-size: 24rpx;
+    color: gray;
+}
+
+.b2 {
+    margin-top: 20rpx;
+}
+
+.nav1 {
+    margin-top: 30rpx;
+}
+
+.haha {
+    width: 80%;
+    margin: auto;
+    height: 80rpx;
+    background-color: rgb(230, 230, 230);
+    margin-top: 20rpx;
+    border-radius: 40rpx;
+    text-align: center;
+    line-height: 80rpx;
+}
+
+.ha1 {
+    height: 50rpx;
+    text-align: center;
+    line-height: 50rpx;
+    margin-right: 40rpx;
+    background-color: #eb4450;
+    width: 100rpx;
+    color: #fff;
+    border-radius: 20rpx;
+float: right;
+margin-top: 20rpx;
+}
+.ha2{
+  height: 80rpx;
+}
+.bjcolor{
+    background-color: #eb4450;
+    color: #fff;
+}
+

@@ -1,0 +1,7 @@
+<!--pages/wdsc/wdsc.wxml-->
+<view>
+    <view class="hearde">
+        <image src="../../image/empty.503e5ccb.png"></image>
+    </view>
+    <view class="bottom">暂无课程</view>
+</view>

@@ -1,0 +1,39 @@
+<!--pages/dengl/dengl.wxml-->
+<view class="header">
+    <image class="image" src="https://wap.lexuemiao.com/img/logo@2x.a4702f31.png" />
+</view>
+<view class="shouji shouTop">
+    <view class="shouji1">
+        <image src="../../image/download (25).png"></image>
+    </view>
+    <view class="shouji2">
+        <input type="text" placeholder="请输入手机号" />
+    </view>
+</view>
+<view class="shouji">
+    <view class="shouji1">
+        <image src="../../image/download (24).png"></image>
+    </view>
+    <view class="shouji2">
+        <input type="text" placeholder="请输入密码" />
+    </view>
+</view>
+<view class="shouji">
+    <view class="shouji1">
+        <image src="../../image/download (24).png"></image>
+    </view>
+    <view class="shouji2">
+        <input type="text" bindinput="devGet" placeholder="请输入验证码" />
+        <view class="yan" bindtap="add">
+            <image src="{{yanList}}"></image>
+        </view>
+    </view>
+</view>
+<button class="btn" bindtap="deng">登录</button>
+<view class="footer">
+    <view class="left">忘记密码</view>
+    <navigator url="/pages/yanzhenma/yanzhenma">
+        <view class="right">注册/验证码登录</view>
+    </navigator>
+
+</view>

@@ -1,0 +1,67 @@
+{
+    "pages": [
+        "pages/miaowu/miaowu",
+        "pages/my/my",
+        "pages/index/index",
+        "pages/wodeke/wodeke",
+        "pages/gongju/gongju",
+        "pages/yanzhenma/yanzhenma",
+        "pages/dengl/dengl",
+        "pages/shezhi/shezhi",
+        "pages/wtfk/wtfk",
+        "pages/wdxx/wdxx",
+        "pages/wdyhj/wdyhj",
+        "pages/wdhy/wdhy",
+        "pages/wdsc/wdsc",
+        "pages/wddd/wddd",
+        "pages/wdxxk/wdxxk",
+        "pages/dzgl/dzgl"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "乐学喵",
+        "navigationBarTextStyle": "black"
+    },
+
+    "tabBar": {
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "选课",
+                "iconPath": "./image/3.png",
+                "selectedIconPath": "./image/4.png"
+            },
+            {
+                "pagePath": "pages/wodeke/wodeke",
+                "text": "我的课",
+                "iconPath": "./image/5.png",
+                "selectedIconPath": "./image/6.png"
+            },
+            {
+                "pagePath": "pages/miaowu/miaowu",
+                "text": "喵屋",
+                "iconPath": "./image/7.png",
+                "selectedIconPath": "./image/8.png"
+            },
+            {
+                "pagePath": "pages/gongju/gongju",
+                "text": "工具",
+                "iconPath": "./image/9.png",
+                "selectedIconPath": "./image/10.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "./image/11.png",
+                "selectedIconPath": "./image/12.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json",
+    "usingComponents": {
+        "van-button": "@vant/weapp/button/index",
+        "van-tab": "@vant/weapp/tab/index",
+        "van-tabs": "@vant/weapp/tabs/index",
+        "van-switch": "@vant/weapp/switch/index"
+      }
+}

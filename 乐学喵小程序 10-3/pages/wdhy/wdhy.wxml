@@ -1,0 +1,8 @@
+<!--pages/wdhy/wdhy.wxml-->
+
+<view>
+    <view class="hearde">
+        <image src="../../image/novip@2x.9a124427.png"></image>
+    </view>
+    <view class="bottom">暂无会员</view>
+</view>
