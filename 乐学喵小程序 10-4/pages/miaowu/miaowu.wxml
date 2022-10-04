@@ -1,0 +1,170 @@
+<view class="headet">
+    <image class="image1" src="../../image/100.png"></image>
+    <view class="top">
+        <view class="headet3">
+            <image class="image2" src="../../image/16.png"></image>
+        </view>
+
+        <view class="headet2">
+            <image class="image3" src="../../image/download (16).png"></image>
+            <image class="image4" src="../../image/download (26).png"></image>
+        </view>
+    </view>
+    <view class="aa">
+        <view class="header">
+            <view class="harder1" bindtap="add1" wx:for="{{dataList}}" wx:key="index" data-index="{{item}}" style="color: {{active==index}};" class="{{active==index? 'color' :''}}">{{item.name}}</view>
+
+        </view>
+    </view>
+</view>
+<!-- 广场 -->
+<view class="guang" wx:if="{{active==0}}">
+    <view class="page-section-spacing">
+        <scroll-view class="scroll-view_H" scroll-x="true" style="30">
+            <view id="demo1" class="scroll-view-item_H demo-text-1" wx:for="{{huaData}}" wx:key="index">
+                <image class="image5" src="{{item.cover}}"></image>
+                <view class="demol2">#{{item.title}}#</view>
+                <view class="demol1">{{item.dyna_count}}讨论</view>
+            </view>
+        </scroll-view>
+    </view>
+
+
+    <view class="miao" wx:for="{{miaoList}}" wx:key="index">
+        <view class="miaomiao">
+            <view class="miaoleft">
+                <view class="miaoimg">
+                    <image src="{{item.square_info.avatar}}"></image>
+                </view>
+                <view class="miaotext">
+                    <view class="a1">{{item.square_info.user_nickname}}</view>
+                    <view class="a2">08-27</view>
+                </view>
+            </view>
+            <view class="miaoright">
+                <view class="a1">+关注</view>
+                <view class="a2">···</view>
+            </view>
+        </view>
+        <view class="miaozhong">
+            <text>
+                {{item.square_info.dyna_details}}
+            </text>
+        </view>
+        <view class="miaoxia">
+            <image src="{{item.square_info.dyna_cover[0]}}"></image>
+        </view>
+
+        <view class="miaofooter">
+            <view class="miao1">
+                <image src="../../image/download (32).png"></image>
+            </view>
+            <view class="miao1">
+                <image src="../../image/download (30).png"></image>
+                <text>10</text>
+            </view>
+            <view class="miao1">
+                <image src="../../image/download (31).png"></image>
+                <text>36</text>
+            </view>
+
+        </view>
+    </view>
+</view>
+<!-- 图书 -->
+<view wx:if="{{active==1}}">
+    <view class="miao" wx:for="{{kanList}}" wx:key="index">
+        <view class="miaomiao">
+            <view class="miaoleft">
+                <view class="miaoimg">
+                    <image src="{{item.avatar}}"></image>
+                </view>
+                <view class="miaotext">
+                    <view class="a1">{{item.square_info.user_nickname}}</view>
+                    <view class="a2">08-27</view>
+                </view>
+            </view>
+            <view class="miaoright">
+                <view class="a1">+关注</view>
+                <view class="a2">···</view>
+            </view>
+        </view>
+
+
+        <view class="zhong">
+            <view class="tutu">{{item.title}}</view>
+            <view class="zhong1">
+                <view class="aleft">
+                    <image src="{{item.cover}}"></image>
+                </view>
+                <view class="aright">
+                    {{item.content}}
+                </view>
+            </view>
+        </view>
+
+
+        <view class="miaofooter">
+            <view class="miao1">
+                <image src="../../image/download (32).png"></image>
+            </view>
+            <view class="miao1">
+                <image src="../../image/download (30).png"></image>
+                <text>10</text>
+            </view>
+            <view class="miao1">
+                <image src="../../image/download (31).png"></image>
+                <text>36</text>
+            </view>
+
+        </view>
+    </view>
+</view>
+
+<!-- 关注 -->
+
+<view wx:if="{{active==2}}">
+
+    请求接口给我返回登录超时
+
+    <view class="miao" wx:for="{{guanList}}" wx:key="index">
+        <view class="miaomiao">
+            <view class="miaoleft">
+                <view class="miaoimg">
+                    <image src="{{item.square_info.avatar}}"></image>
+                </view>
+                <view class="miaotext">
+                    <view class="a1">{{item.square_info.user_nickname}}</view>
+                    <view class="a2">08-27</view>
+                </view>
+            </view>
+            <view class="miaoright">
+                <view class="a1">+关注</view>
+                <view class="a2">···</view>
+            </view>
+        </view>
+        <view class="miaozhong">
+            <text>
+                {{item.square_info.dyna_details}}
+            </text>
+        </view>
+        <view class="miaoxia">
+            <image src="{{item.square_info.dyna_cover[0]}}"></image>
+        </view>
+
+        <view class="miaofooter">
+            <view class="miao1">
+                <image src="../../image/download (32).png"></image>
+            </view>
+            <view class="miao1">
+                <image src="../../image/download (30).png"></image>
+                <text>10</text>
+            </view>
+            <view class="miao1">
+                <image src="../../image/download (31).png"></image>
+                <text>36</text>
+            </view>
+
+        </view>
+    </view>
+</view>

@@ -1,0 +1,23 @@
+/* pages/shezhi/shezhi.wxss */
+.heder{
+    display: flex;
+    height: 80rpx;
+    border-bottom: 1px solid #ccc;
+    margin: 0 40rpx;
+    justify-content: space-between;
+    margin-top: 20rpx;
+}
+.heder .right{
+    color: gray;
+    line-height: 80rpx;
+}
+.heder .left{
+    line-height: 80rpx;
+}
+.btn{
+    border: 1px solid red;
+    background-color: #fff;
+    color: #eb4450;
+    margin: 0 40rpx;
+    margin-top: 200rpx;
+}

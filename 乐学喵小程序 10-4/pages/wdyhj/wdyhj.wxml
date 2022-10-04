@@ -1,0 +1,4 @@
+<!--pages/wdyhj/wdyhj.wxml-->
+<view class="hearder">
+<view  wx:for="{{List}}" wx:key="index" bindtap="add" data-index="{{index}}" class="{{active==index ? 'active' :''}} chid"> {{item.name}}</view>
+</view>

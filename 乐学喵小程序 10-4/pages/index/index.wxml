@@ -1,0 +1,107 @@
+<view class="header">
+    <view class="left" bindtap="top" bind:close="onClose">
+        管理类联考>
+    </view>
+    <view class="right">
+        <image src="../../image/download (13).png"></image>
+        <image src="../../image/download (14).png"></image>
+    </view>
+</view>
+
+<view class="daohang">
+    <view class="doa1" bindtap="add" data-index="1" class="{{active==1 ? 'color' :''}}">推荐</view>
+    <view class="doa1" bindtap="add" wx:for="{{miaoList}}" wx:key="index" data-index="{{item.id}}" class="{{active==item.id ? 'color' :''}}">{{item.title}}</view>
+</view>
+
+<!-- 轮播图 -->
+
+<view class="swiper-class">
+    <swiper autoplay='true' indicator-dots='true' indicator-color='#ccc'>
+        <swiper-item wx:for="{{lunList}}" wx:key="index" >
+       
+            <image bindtap="xiang" data-index="{{item.link}}" src="{{item.banner_img}}"></image>
+        </swiper-item>
+    </swiper>
+</view>
+<view class="top">
+    <image src="../../image/zan_a.2e430906.png"></image>
+    <view>距离考研82天</view>
+</view>
+
+<view class="nav" wx:if="{{active==1}}">
+    <view class="middle">
+        <view class="left"> 免费直播课</view>
+        <view class="right">查看全部 ></view>
+    </view>
+    <view class="footer">
+        <view class="a" wx:for="{{mianList}}" wx:key="index" bindtap="xiang" data-index="{{item.id}}">
+            <view class="a1">
+                <image src="	https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/image/20224wnkersk1659940001.png">
+                </image>
+            </view>
+            <view class="a2">{{item.title}}</view>
+            <view class="a3">免费</view>
+            <view class="a4">123123人已报名</view>
+        </view>
+    </view>
+
+</view>
+<view class="nav1" wx:if="{{active==1}}">
+    <view class="middle">
+        <view class="left"> 推荐好课</view>
+        <view class="right">查看全部 ></view>
+    </view>
+    <view class="b" wx:for="{{dataList}}" wx:key="index">
+        <view class="b1">{{item.course_classify_title}}</view>
+        <view class="b2">
+            {{ item.title}}
+        </view>
+        <view class="b3">
+            <view class="b33" wx:for="{{item.teacher}}" wx:key="index">
+                <image src="{{item.avatar}}"></image>
+                <text>{{item.teacher_name}}</text>
+            </view>
+        </view>
+        <view class="b4">
+            <view class="b44">
+                <view>限{{item.a_stock}}人</view>
+                <view>{{item.sales_num}}人以报名</view>
+            </view>
+            <view> 免费</view>
+        </view>
+    </view>
+
+</view>
+
+<view class="nav1" wx:if="{{active!=1}}">
+    <view class="b" wx:for="{{dataList}}" wx:key="index"  bindtap="xiang" data-index="{{item.id}}">
+        <view class="b1">{{item.course_classify_title}}</view>
+        <view class="b2">
+            {{ item.title}}
+        </view>
+        <view class="b3">
+            <view class="b33" wx:for="{{item.teacher}}" wx:key="index">
+                <image src="{{item.avatar}}"></image>
+                <text>{{item.teacher_name}}</text>
+            </view>
+        </view>
+        <view class="b4">
+            <view class="b44">
+                <view>限{{item.a_stock}}人</view>
+                <view>{{item.sales_num}}人以报名</view>
+            </view>
+            <view> 免费</view>
+        </view>
+    </view>
+
+</view>
+<!-- 弹出层 -->
+<view>
+
+    <van-popup closeable close-icon-position="top-left" show="{{ show }}" bind:close="onClose" position="bottom" custom-style="height: 70%;">
+        <view class="ha1" bindtap="wan">完成</view>
+        <view class="ha2"></view>
+        <view  wx:for="{{tabList}}" wx:key="index" bindtap="tan" data-tan="{{item}}" class="{{item.major_id == bjcolor ? 'bjcolor' :''}} haha">{{item.major_name}}</view>
+    </van-popup>
+
+</view>

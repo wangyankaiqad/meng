@@ -1,0 +1,24 @@
+<!--pages/shezhi/shezhi.wxml-->
+<view class="heder">
+    <view class="left">更换绑定手机号</view>
+    <view class="right">13613286323 ></view>
+</view>
+<navigator url="/pages/SetNewPassword/SetNewPassword">
+    <view class="heder">
+        <view class="left">设置密码</view>
+        <view class="right"> ></view>
+    </view>
+</navigator>
+
+<view class="heder">
+    <view class="left">关于我们</view>
+    <view class="right">></view>
+</view>
+<view class="heder">
+    <view class="left">上课短信通知</view>
+    <view class="right">
+        <van-switch checked="{{ checked }}" active-color="#07c160" inactive-color="#ee0a24" bind:change="onChange" />
+    </view>
+</view>
+
+<button class="btn" bindtap="btn">退出登录</button>

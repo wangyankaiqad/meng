@@ -1,0 +1,45 @@
+<!--pages/wodeke/wodeke.wxml-->
+<view class="header">2022年10月</view>
+
+<view class="nav">
+    <view class="top" wx:for="{{daList}}" wx:key="index">{{item.name}}</view>
+</view>
+<view class="nav">
+    <view class="bottom" wx:for="{{xiaoList}}" wx:key="index" bindtap="add" data-index="{{item.id}}" class="{{active == index ? 'active' : ''}}">{{item.name}}</view>
+</view>
+
+<view class="aa">
+    <view class="left">今日课程（ <text class="t1">0 </text> <text class="t2">节</text> ）</view>
+    <view class="right">
+        <view class="img">
+            <image src="../../image/download (35).png"></image>
+        </view>
+        课表
+    </view>
+</view>
+
+<view class="bb">
+    <view class="b1">
+        <view class="b2">
+            <image src="../../image/19.png"></image>
+        </view>
+        <view class="b3">学习记录</view>
+    </view>
+    <view class="b1">
+        <view class="b2">
+            <image src="../../image/18.png"></image>
+        </view>
+        <view class="b3">学习资料</view>
+    </view>
+</view>
+
+<view class="cc">
+    <view class="c1">
+        <image src="../../image/20.png"></image>
+    </view>
+    <view class="c2">暂无课程，快去选课吧···</view>
+</view>
+
+<button class="btn" bindtap="add1">去选课</button>
+
+<view class="dd"></view>

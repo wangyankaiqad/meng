@@ -1,0 +1,14 @@
+<!--pages/gongju/gongju.wxml-->
+<view class="hearder">
+
+    <view class="hearder-bottom">
+        <view>学习资料</view>
+        <view>正在参与</view>
+    </view>
+</view>
+
+
+<view class="nav">
+    <image src="https://wap.lexuemiao.com/img/noData2.ec86a21a.png"></image>
+    <view class="aa">暂无数据</view>
+</view>

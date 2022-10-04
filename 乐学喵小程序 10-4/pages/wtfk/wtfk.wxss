@@ -1,0 +1,14 @@
+/* pages/wtfk/wtfk.wxss */
+.textarea {
+    border: 1px solid #ccc;
+    margin: auto;
+}
+
+.btn {
+
+    background-color: #f15a24;
+
+    margin: 0 40rpx;
+    margin-top: 50rpx;
+    color: #ffffff;
+}

@@ -1,0 +1,11 @@
+<!--pages/wddd/wddd.wxml-->
+
+<view class="header">
+    <view wx:for="{{List}}" wx:key="index" bindtap="add" data-index="{{item.id}}" class="{{active == item.id ? 'active' :''}}">{{item.name}}</view>
+</view>
+<view class="nav">
+    <view class="img">
+        <image src="../../image/empty.503e5ccb.png"></image>
+    </view>
+    暂无订单内容
+</view>

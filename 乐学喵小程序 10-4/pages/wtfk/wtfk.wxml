@@ -1,0 +1,9 @@
+<!--pages/wtfk/wtfk.wxml-->
+<!-- 输入框 -->
+<view class="inputBox">
+    <textarea class="textarea" placeholder="请输入您的问题或者反馈">
+
+    </textarea>
+</view>
+
+<button class="btn">提交</button>

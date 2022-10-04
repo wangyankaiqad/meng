@@ -1,0 +1,9 @@
+<!--pages/wdxxk/wdxxk.wxml-->
+<view class="nav">
+    <view class="img">
+        <image src="../../image/empty.503e5ccb.png"></image>
+    </view>
+    暂无订单内容
+</view>
+
+<view class="btn">学习卡兑换</view>

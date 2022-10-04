@@ -1,0 +1,60 @@
+<!--pages/xiangqing/xiangqing.wxml-->
+<view class="header">
+    <view class="img">
+        <image src="{{infoList.image}}"></image>
+    </view>
+    <view class="header1">{{infoList.title}}</view>
+    <view class="header2">共{{infoList.course_count}}个可是 | 系统课</view>
+    <view class="header3">共{{infoList.sales_num}}个课时 | 系统课</view>
+
+    <view class="header4" wx:for="{{infoList.teacher}}" wx:key="index">
+        <image src="{{item.avatar}}">
+        </image> <text>{{item.teacher_name}}</text>
+    </view>
+    <van-icon class="icon" name="star-o" bindtap="shoucang"/>
+</view>
+
+<view class="dao">
+    <view wx:for="{{daoList}}" wx:key="index" bindtap="add" data-index="{{item.id}}" class="{{active==item.id ? 'active' :''}} dao1">{{item.name}}</view>
+</view>
+
+<view class="footer" wx:if="{{active==0}}">
+    <rich-text class="rich-text" nodes="{{infoList.course_details}}"></rich-text>
+</view>
+
+<view class="aa" wx:if="{{active==1}}">
+    <view wx:for="{{kedata}}" wx:key="index" bindtap="add1" data-index="{{item.id}}" class="{{active1 == item.id ? 'active1' : ''}} a1">
+        <van-icon name="{{item.icon}}" /> {{item.name}}
+    </view>
+</view>
+
+<view class="aaa" wx:if="{{active==1 && active1==0}}">
+    <view class="aa1" wx:for="{{keList}}" wx:key="index">
+        {{item.title}}
+    </view>
+</view>
+<view  wx:if="{{active==2}}" class="xiazai"></view>
+<view  wx:if="{{active==3}}" class="pingjia">
+    <view class="img">
+    <image src="../../image/empty.503e5ccb.png"></image>
+    </view>
+    暂无评价内容
+</view>
+
+
+<view class="sd">
+    <view class="bottom">
+        <view class="left">
+            <view class="c1">免费</view>
+            <view class="c2">
+                <image src="../../image/下载.png"></image>
+                <view class="c3">客服</view>
+            </view>
+        </view>
+        <view class="right">
+            免费领取
+        </view>
+    </view>
+</view>
+
+<view class="oo"></view>

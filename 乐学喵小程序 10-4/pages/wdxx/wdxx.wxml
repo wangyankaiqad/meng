@@ -1,0 +1,19 @@
+<!--pages/wdxx/wdxx.wxml-->
+<view class="hearde">
+    <view class="left"> 
+        <image src="../../image/download (34).png"></image>
+    </view>
+    <view>课程通知</view>
+</view>
+<view class="hearde">
+    <view class="left"> 
+        <image src="../../image/download (33).png"></image>
+    </view>
+    <view>系统通知</view>
+</view>
+<view class="hearde">
+    <view class="left"> 
+        <image src="../../image/download (33).png"></image>
+    </view>
+    <view>订单通知</view>
+</view>

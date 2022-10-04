@@ -1,0 +1,175 @@
+/* pages/xiangqing/xiangqing.wxss */
+.img {
+    width: 100%;
+    height: 400rpx;
+}
+
+.img image {
+    width: 100%;
+    height: 100%;
+}
+
+.header1 {
+    padding: 10rpx;
+    font-weight: 700;
+}
+
+.header2,
+.header3 {
+    padding: 10rpx 20rpx;
+    font-size: 24rpx;
+    color: gray;
+}
+
+.header4 {
+    display: flex;
+    margin-top: 20rpx;
+    padding: 0 20rpx;
+    align-items: center;
+}
+
+.header4 image {
+    width: 50rpx;
+    height: 50rpx;
+    border-radius: 50%;
+}
+
+.header4 text {
+    font-size: 24rpx;
+    margin-left: 10rpx;
+    font-weight: 400;
+}
+
+.header {
+    border-bottom: 20rpx solid rgb(204, 204, 204, 0.2);
+    padding-bottom: 30rpx;
+    position: relative;
+}
+
+.dao {
+    display: flex;
+}
+
+.dao .dao1 {
+    flex: 1;
+    height: 100rpx;
+    text-align: center;
+    line-height: 100rpx;
+
+}
+
+.active {
+    border-bottom: 1px solid red;
+    color: #eb4450;
+}
+
+.aa {
+    display: flex;
+    margin-top: 50rpx;
+    padding: 0 50rpx;
+    justify-content: space-evenly;
+}
+
+.a1 {
+    width: 200rpx;
+    height: 60rpx;
+    border: 1px solid #ccc;
+    border-radius: 30rpx;
+    text-align: center;
+    line-height: 60rpx;
+    font-size: 28rpx;
+    color: gray;
+}
+
+.active1 {
+    border-color: #eb4450;
+    color: #eb4450;
+}
+
+.aa1 {
+    margin: 0 10rpx;
+    height: 50rpx;
+    background-color: rgb(204, 204, 204, .2);
+    margin-top: 20rpx;
+    font-size: 24rpx;
+    font-weight: 200;
+    line-height: 50rpx;
+}
+
+.bottom {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    width: 50%;
+    float: right;
+    text-align: center;
+    line-height: 120rpx;
+    background-color: rgb(241, 90, 36);
+    color: #fff;
+}
+
+.c1 {
+    width: 120px;
+    text-align: center;
+    line-height: 120rpx;
+    font-size: 40rpx;
+    color: rgb(110, 164, 38);
+    float: left;
+}
+
+.c2 {
+    width: 120rpx;
+    height: 120rpx;
+    border-left: 1px solid #ccc;
+    text-align: center;
+    float: right;
+
+}
+
+.c2 image {
+    width: 40rpx;
+    height: 40rpx;
+    margin-top: 20rpx;
+}
+
+.c3 {
+    font-size: 28rpx;
+    font-weight: 200;
+}
+.pingjia .img{
+    width: 200rpx;
+    height: 200rpx;
+    margin: auto;
+    margin-bottom: 40rpx;
+}
+.pingjia .img image{
+    width: 100%;
+    height: 100%;
+ 
+}
+.pingjia {
+    text-align: center;
+    font-size: 24rpx;
+}
+.xiazai{
+    width: 100%;
+    height: 500rpx;
+}
+.oo{
+    width: 100%;
+    height: 500rpx;
+}
+.icon{
+    position: absolute;
+    right: 30rpx;
+    top: 630rpx;
+}
