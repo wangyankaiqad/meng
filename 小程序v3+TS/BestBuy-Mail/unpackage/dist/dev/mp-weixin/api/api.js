@@ -1,0 +1,14 @@
+"use strict";
+var request_request = require("../request/request.js");
+const getSwiper = () => request_request.request("/home/swiperdata").then((res) => res, (err) => err);
+const getCart = () => request_request.request("/home/catitems").then((res) => res, (err) => err);
+const getFloor = () => request_request.request("/home/floordata").then((res) => res, (err) => err);
+const getclassiFication = () => request_request.request("/categories").then((res) => res, (err) => err);
+const getSearchInput = (value) => request_request.request(`/goods/qsearch?query=${value}`).then((res) => res, (err) => err);
+const getDetails = (id) => request_request.request(`/goods/detail?goods_id=${id}`).then((res) => res, (err) => err);
+exports.getCart = getCart;
+exports.getDetails = getDetails;
+exports.getFloor = getFloor;
+exports.getSearchInput = getSearchInput;
+exports.getSwiper = getSwiper;
+exports.getclassiFication = getclassiFication;
